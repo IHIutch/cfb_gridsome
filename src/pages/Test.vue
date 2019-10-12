@@ -1,6 +1,9 @@
 <template>
   <Layout>
     <div>Hey</div>
+    <div v-for="row in $page.allGoogleSheet.edges" :key="row.id">
+      {{ row.node.title }}
+    </div>
   </Layout>
 </template>
 
@@ -20,7 +23,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Products"
+    title: "Test"
   }
 };
 </script>

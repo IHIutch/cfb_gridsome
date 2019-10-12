@@ -2,7 +2,7 @@
   <Layout>
     <div>
       <h1>{{ $page.googleSheet.title }}</h1>
-      <h2>Current Language: {{ lang }}</h2>
+      <h2>{{ $page.googleSheet.another_column }}</h2>
     </div>
   </Layout>
 </template>
@@ -11,6 +11,7 @@
   query Post ($path: String!) {
     googleSheet (path: $path) {
       title,
+      another_column
     }
   }
 </page-query>

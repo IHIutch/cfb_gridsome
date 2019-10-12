@@ -11,7 +11,8 @@ module.exports = {
       use: "gridsome-source-google-sheets",
       options: {
         sheetId: "1Fx769sYItpDDIeR8ujf8SzxJz1pBRHj9bhzHP4p1EoE",
-        apiKey: "AIzaSyBRc0sO45iLKdjYZ9JnAlaNQHPWgzzwg0k"
+        apiKey: "AIzaSyBRc0sO45iLKdjYZ9JnAlaNQHPWgzzwg0k",
+        route: "/:slug"
       }
     }
   ]
