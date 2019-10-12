@@ -7,6 +7,9 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.6.9"
+  },
+  "devDependencies": {
+    "gridsome-source-google-sheets": "^0.2.0"
   }
 }
