@@ -1,17 +1,17 @@
 <template>
   <Layout>
     <div>
-      <h1>{{ $page.googleSheet.title }}</h1>
-      <h2>{{ $page.googleSheet.another_column }}</h2>
+      <h1>{{ $page.members.first_name }}</h1>
+      <h2>{{ $page.members.last_name }}</h2>
     </div>
   </Layout>
 </template>
 
 <page-query>
   query Post ($path: String!) {
-    googleSheet (path: $path) {
-      title,
-      another_column
+    members (path: $path) {
+      first_name,
+      last_name
     }
   }
 </page-query>
@@ -25,7 +25,7 @@ export default {
   },
   metaInfo() {
     return {
-      title: this.$page.googleSheet.title
+      title: this.$page.members.first_name
     };
   }
 };
