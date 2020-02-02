@@ -2,8 +2,9 @@
   <Layout>
     <div>Hey</div>
     <div v-for="member in $page.members.edges" :key="member.node.id">
-      <g-link :to="'/members/' + member.node.id">
-        {{ member.node.id }} - {{ member.node.twitter_handle }}
+      <g-link :to="'/members/' + member.node.slug">
+        {{ member.node.first_name }} {{ member.node.last_name }} -
+        {{ member.node.twitter_handle }}
       </g-link>
     </div>
   </Layout>
@@ -15,6 +16,10 @@
       edges {
         node {
           id,
+          first_name,
+          last_name,
+          slug,
+          twitter_handle
         }
       }
     }

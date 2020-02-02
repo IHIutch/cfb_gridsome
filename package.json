@@ -10,6 +10,6 @@
     "gridsome": "^0.7.12"
   },
   "devDependencies": {
-    "gridsome-source-google-sheets": "^0.3.1"
+    "gridsome-source-google-sheets": "github:IHIutch/gridsome-source-google-sheets#multiple-sheets"
   }
 }

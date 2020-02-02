@@ -9,14 +9,12 @@ module.exports = {
   templates: {
     members: [
       {
-        path: "/members/:id",
-        component: "./src/templates/MemberPage"
+        path: "/members/:slug"
       }
     ],
     projects: [
       {
-        path: "/projects/:id",
-        component: "./src/templates/ProjectPage"
+        path: "/projects/:slug"
       }
     ]
   },
