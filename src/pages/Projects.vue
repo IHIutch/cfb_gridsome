@@ -2,7 +2,7 @@
   <Layout>
     <div>Hey</div>
     <div v-for="row in $page.allProjects.edges" :key="row.id">
-      <g-link :to="'/projects/' + row.node.slug">
+      <g-link :to="'/projects/' + row.node.id">
         {{ row.node.name }}
       </g-link>
     </div>
@@ -15,8 +15,6 @@
       edges {
         node {
         	id,
-          name,
-          slug
         }
       }
     }

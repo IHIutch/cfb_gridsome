@@ -1,25 +1,20 @@
 <template>
   <Layout>
     <div>Hey</div>
-    <div v-for="row in $page.allMembers.edges" :key="row.id">
-      <g-link :to="'/members/' + row.node.slug">
-        {{ row.node.first_name }} - {{ row.node.twitter_handle }}
+    <div v-for="member in $page.members.edges" :key="member.node.id">
+      <g-link :to="'/members/' + member.node.id">
+        {{ member.node.id }} - {{ member.node.twitter_handle }}
       </g-link>
     </div>
   </Layout>
 </template>
 
 <page-query>
-  query Items {
-    allMembers {
+  query {
+    members: allMembers {
       edges {
         node {
-        	id,
-          first_name,
-          last_name,
-          twitter_handle,
-          github_url,
-          slug
+          id,
         }
       }
     }

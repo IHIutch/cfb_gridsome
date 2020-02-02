@@ -9,13 +9,13 @@ module.exports = {
   templates: {
     members: [
       {
-        path: "/members/:slug",
+        path: "/members/:id",
         component: "./src/templates/MemberPage"
       }
     ],
     projects: [
       {
-        path: "/projects/:slug",
+        path: "/projects/:id",
         component: "./src/templates/ProjectPage"
       }
     ]
@@ -24,18 +24,31 @@ module.exports = {
     {
       use: "gridsome-source-google-sheets",
       options: {
-        apiKey: "AIzaSyBRc0sO45iLKdjYZ9JnAlaNQHPWgzzwg0k",
+        apiKey: "AIzaSyBr5fG-i9As37hpE8INSqKVHhcISoVs4Ig",
         spreadsheets: [
           {
-            templateName: "members",
-            spreadsheetId: "1Fx769sYItpDDIeR8ujf8SzxJz1pBRHj9bhzHP4p1EoE"
+            spreadsheetId: "1Fx769sYItpDDIeR8ujf8SzxJz1pBRHj9bhzHP4p1EoE",
+            sheets: [
+              {
+                sheetName: "Sheet1",
+                collectionName: "members"
+              },
+              {
+                sheetName: "Sheet2",
+                collectionName: "testing"
+              }
+            ]
           },
           {
-            templateName: "projects",
-            spreadsheetId: "1hYkxGD-auEysouVqbTWisNmJub4b15jfoXxAAs0t1DI"
+            spreadsheetId: "1hYkxGD-auEysouVqbTWisNmJub4b15jfoXxAAs0t1DI",
+            sheets: [
+              {
+                sheetName: "Sheet1",
+                collectionName: "projects"
+              }
+            ]
           }
         ]
-        // sheets: ["Sheet1", "Sheet2"]
       }
     }
   ]

@@ -1,18 +1,18 @@
 <template>
   <Layout>
     <div>
-      <h1>{{ $page.members.first_name }}</h1>
-      <h2>{{ $page.members.last_name }}</h2>
-      <h2>{{ $page.members.github_url }}</h2>
+      <h1>{{ $page.member.first_name }}</h1>
+      <h2>{{ $page.member.last_name }}</h2>
+      <h2>{{ $page.member.github_url }}</h2>
     </div>
   </Layout>
 </template>
 
 <page-query>
   query Post ($path: String!) {
-    members (path: $path) {
-      first_name,
-      last_name,
+    member: members (path: $path) {
+      first_name
+      last_name
       github_url
     }
   }
