@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.12"
+    "gridsome": "^0.7.13"
   },
   "devDependencies": {
     "gridsome-source-google-sheets": "github:IHIutch/gridsome-source-google-sheets#multiple-sheets"
