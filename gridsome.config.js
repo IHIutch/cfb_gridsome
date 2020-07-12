@@ -4,6 +4,10 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const tailwind = require("tailwindcss");
+const autoprefixer = require("autoprefixer");
+const postcssPlugins = [tailwind, autoprefixer];
+
 module.exports = {
   siteName: "Gridsome",
   templates: {
@@ -41,4 +45,11 @@ module.exports = {
       },
     },
   ],
+  css: {
+    loaderOptions: {
+      postcss: {
+        plugins: postcssPlugins,
+      },
+    },
+  },
 };

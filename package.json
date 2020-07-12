@@ -10,6 +10,9 @@
     "gridsome": "^0.7.19"
   },
   "devDependencies": {
-    "gridsome-source-google-sheets": "github:IHIutch/gridsome-source-google-sheets#multiple-sheets"
+    "autoprefixer": "^9.8.5",
+    "gridsome-source-google-sheets": "github:IHIutch/gridsome-source-google-sheets#multiple-sheets",
+    "sass-loader": "^9.0.2",
+    "tailwindcss": "^1.4.6"
   }
 }
