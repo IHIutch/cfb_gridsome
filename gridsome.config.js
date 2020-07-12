@@ -9,45 +9,36 @@ module.exports = {
   templates: {
     members: [
       {
-        path: "/members/:slug"
-      }
+        path: "/members/:slug",
+      },
     ],
     projects: [
       {
-        path: "/projects/:slug"
-      }
-    ]
+        path: "/projects/:slug",
+      },
+    ],
   },
   plugins: [
     {
       use: "gridsome-source-google-sheets",
       options: {
-        apiKey: "AIzaSyBr5fG-i9As37hpE8INSqKVHhcISoVs4Ig",
+        apiKey: "AIzaSyAx5wvcMW52cVEjOBYhbAhBKLfroeAWBRk",
         spreadsheets: [
           {
             spreadsheetId: "1Fx769sYItpDDIeR8ujf8SzxJz1pBRHj9bhzHP4p1EoE",
             sheets: [
               {
-                sheetName: "Sheet1",
-                collectionName: "members"
+                sheetName: "Members",
+                collectionName: "members",
               },
               {
-                sheetName: "Sheet2",
-                collectionName: "testing"
-              }
-            ]
+                sheetName: "Projects",
+                collectionName: "projects",
+              },
+            ],
           },
-          {
-            spreadsheetId: "1hYkxGD-auEysouVqbTWisNmJub4b15jfoXxAAs0t1DI",
-            sheets: [
-              {
-                sheetName: "Sheet1",
-                collectionName: "projects"
-              }
-            ]
-          }
-        ]
-      }
-    }
-  ]
+        ],
+      },
+    },
+  ],
 };
