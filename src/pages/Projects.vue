@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <div>Hey</div>
     <div v-for="project in $page.projects.edges" :key="project.id">
       <g-link :to="'/projects/' + project.node.id">
         {{ project.node.name }}
@@ -25,7 +24,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Test"
-  }
+    title: "Test",
+  },
 };
 </script>

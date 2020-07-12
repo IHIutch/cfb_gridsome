@@ -11,14 +11,14 @@ const postcssPlugins = [tailwind, autoprefixer];
 module.exports = {
   siteName: "Gridsome",
   templates: {
-    members: [
+    Members: [
       {
         path: "/members/:slug",
       },
     ],
-    projects: [
+    Projects: [
       {
-        path: "/projects/:slug",
+        path: "/projects/:id",
       },
     ],
   },
@@ -33,11 +33,11 @@ module.exports = {
             sheets: [
               {
                 sheetName: "Members",
-                collectionName: "members",
+                collectionName: "Members",
               },
               {
                 sheetName: "Projects",
-                collectionName: "projects",
+                collectionName: "Projects",
               },
             ],
           },

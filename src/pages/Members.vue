@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <div>Hey</div>
     <div v-for="member in $page.members.edges" :key="member.node.id">
       <g-link :to="'/members/' + member.node.slug">
         {{ member.node.first_name }} {{ member.node.last_name }} -
@@ -29,7 +28,7 @@
 <script>
 export default {
   metaInfo: {
-    title: "Test"
-  }
+    title: "Test",
+  },
 };
 </script>

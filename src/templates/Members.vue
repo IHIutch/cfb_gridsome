@@ -23,12 +23,12 @@ import Layout from "~/layouts/Default.vue";
 
 export default {
   components: {
-    Layout
+    Layout,
   },
   metaInfo() {
     return {
-      title: this.$page.members.first_name
+      title: this.$page.member.first_name,
     };
-  }
+  },
 };
 </script>
