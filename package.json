@@ -10,7 +10,7 @@
     "gridsome": "^0.7.19"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.5",
+    "autoprefixer": "^9.8.6",
     "gridsome-source-google-sheets": "github:IHIutch/gridsome-source-google-sheets#multiple-sheets",
     "sass-loader": "^9.0.2",
     "tailwindcss": "^1.4.6"
