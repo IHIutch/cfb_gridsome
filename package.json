@@ -12,7 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^9.8.5",
     "gridsome-source-google-sheets": "github:IHIutch/gridsome-source-google-sheets#multiple-sheets",
-    "sass-loader": "^9.0.2",
+    "sass-loader": "^10.0.4",
     "tailwindcss": "^1.4.6"
   }
 }
