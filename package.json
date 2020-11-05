@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.19"
+    "gridsome": "^0.7.22"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.5",
